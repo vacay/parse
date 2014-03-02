@@ -4,13 +4,13 @@ var chai = require("chai"),
     parse = require('../');
 
 describe('Detecting an 8tracks mix link', function () {
-  var items;
+    var items;
 
-  before(function(done) {
-    parse('http://8tracks.com/larecreative/jeux-d-eau', function(err, i) {
-      items = i;
-      done();
+    before(function(done) {
+	parse('http://8tracks.com/larecreative/jeux-d-eau', function(err, i) {
+	    items = i;
+	    done();
+	});
     });
-  });
     
 });
