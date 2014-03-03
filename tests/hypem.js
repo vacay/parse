@@ -44,3 +44,43 @@ describe('Analyzing http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(fea
 	items[0].created_at.should.equalDate.date;
     });
 });
+
+describe('Analyzing http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function() {
+    var items;
+
+    before(function(done) {
+	parse('http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function(err, i) {
+	    items = i;
+	    done();
+	});
+    });
+
+    it('identify as hypem track link', function() {
+	items.should.have.length(1);
+    });
+
+    it('should have a track id of 22q3z', function() {
+	items[0].id.should.equal('22q3z');
+    });
+
+    it('host should be hypem', function() {
+	items[0].host.should.equal('hypem');
+    });
+
+    it('url should be http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function() {
+	items[0].url.should.equal('http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)');
+    });
+
+    it('should have a title of Hot Natured - Benediction (Lxury Remix)', function() {
+	items[0].title.should.equal('Hot Natured - Benediction (Lxury Remix)');
+    });
+
+    it('should have a track duration of 386', function() {
+	items[0].duration.should.equal(386);
+    });
+
+    it('should have a track creation date of Sun Mar 02 2014 10:43:39 GMT-0500 (EST)', function() {
+	var date = new Date('Sun Mar 02 2014 10:43:39 GMT-0500 (EST)');
+	items[0].created_at.should.equalDate.date;
+    });
+});
