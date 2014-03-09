@@ -168,3 +168,24 @@ describe('Analyzing http://soundcloud.com/vicetone/vicetone-lowdown-preview-1/s-
 	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3');
     });
 });
+
+describe('Analyzing https://soundcloud.com/electronic-battle-weapon/essential-mix-shadow-child', function () {
+    var items, error;
+
+    before(function(done) {
+	parse('https://soundcloud.com/electronic-battle-weapon/essential-mix-shadow-child', function(err, i) {
+	    error = err;
+	    items = i;
+	    done();
+	});
+    });
+
+    it('soundcloud track does not exist', function() {
+	items.should.have.length(0);
+    });
+
+    it('skip 404 without errors', function() {
+	should.not.exist(error);
+    });
+
+});
