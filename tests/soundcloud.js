@@ -101,8 +101,8 @@ describe('Analyzing https://soundcloud.com/gottadancedirty/sets/the-dirt-145-tok
 	});
     });
 
-    it('identify 10 tracks part of a soundcloud set', function() {
-	items.should.have.length(10);
+    it('identify 9 tracks part of a soundcloud set', function() {
+	items.should.have.length(9);
     });
 
     it('first track should have an id of 132843827', function() {
