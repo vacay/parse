@@ -51,9 +51,25 @@ describe('Analyzing http://blazo.bandcamp.com/album/jazz-format-mixtape-vol-1', 
 	    done();
 	});
     });
-    
+
     it('identify 22 tracks part of a bandcamp album', function() {
 	items.should.have.length(22);
+    });
+
+});
+
+describe('Analyzing http://exoticpylonrecords.bandcamp.com/album/bucolica/', function () {
+    var items;
+
+    before(function(done) {
+	parse('http://exoticpylonrecords.bandcamp.com/album/bucolica/', function(err, i) {
+	    items = i;
+	    done();
+	});
+    });
+
+    it('identify 3 tracks part of a bandcamp album', function() {
+	items.should.have.length(3);
     });
 
 });

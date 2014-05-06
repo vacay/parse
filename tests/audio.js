@@ -3,11 +3,11 @@ var chai = require("chai"),
     should = chai.should(),
     parse = require('../');
 
-describe('Analyzing http://s3.amazonaws.com/vcy/production/vitamins/1.mp3', function () {
+describe('Analyzing http://s3.amazonaws.com/vacay/production/vitamins/1.mp3', function () {
     var items;
 
     before(function(done) {
-	parse('http://s3.amazonaws.com/vcy/production/vitamins/1.mp3', function(err, i) {
+	parse('http://s3.amazonaws.com/vacay/production/vitamins/1.mp3', function(err, i) {
 	    items = i;
 	    done();
 	});
@@ -25,12 +25,12 @@ describe('Analyzing http://s3.amazonaws.com/vcy/production/vitamins/1.mp3', func
 	items[0].host.should.equal('amazonaws');
     });
 
-    it('url should be http://s3.amazonaws.com/vcy/production/vitamins/1.mp3', function() {
-	items[0].url.should.equal('http://s3.amazonaws.com/vcy/production/vitamins/1.mp3');
+    it('url should be http://s3.amazonaws.com/vacay/production/vitamins/1.mp3', function() {
+	items[0].url.should.equal('http://s3.amazonaws.com/vacay/production/vitamins/1.mp3');
     });
 
-    it('stream_url should be http://s3.amazonaws.com/vcy/production/vitamins/1.mp3', function() {
-	items[0].stream_url.should.equal('http://s3.amazonaws.com/vcy/production/vitamins/1.mp3');
+    it('stream_url should be http://s3.amazonaws.com/vacay/production/vitamins/1.mp3', function() {
+	items[0].stream_url.should.equal('http://s3.amazonaws.com/vacay/production/vitamins/1.mp3');
     });
 
 });
