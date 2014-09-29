@@ -3,11 +3,11 @@ var chai = require("chai"),
     should = chai.should(),
     parse = require('../');
 
-describe('Analyzing https://soundcloud.com/durante/never-stop', function () {
+describe('Analyzing http://soundcloud.com/skrillex/with-you-friends-long-drive', function () {
     var items;
 
     before(function(done) {
-	parse('https://soundcloud.com/durante/never-stop', function(err, i) {
+	parse('http://soundcloud.com/skrillex/with-you-friends-long-drive', function(err, i) {
 	    items = i;
 	    done();
 	});
@@ -17,32 +17,32 @@ describe('Analyzing https://soundcloud.com/durante/never-stop', function () {
 	items.should.have.length(1);
     });
 
-    it('id should be 133393388', function() {
-	items[0].id.should.equal(133393388);
+    it('id should be 21792171', function() {
+	items[0].id.should.equal(21792171);
     });
 
     it('host should be soundcloud', function() {
 	items[0].host.should.equal('soundcloud');
     });
 
-    it('title should be Lenno - Never Stop (Durante Remix)', function() {
-	items[0].title.should.equal('Lenno - Never Stop (Durante Remix)');
+    it('title should be WITH YOU, FRIENDS (LONG DRIVE)', function() {
+	items[0].title.should.equal('WITH YOU, FRIENDS (LONG DRIVE)');
     });
 
-    it('url should be http://soundcloud.com/durante/never-stop', function() {
-	items[0].url.should.equal('http://soundcloud.com/durante/never-stop');
+    it('url should be http://soundcloud.com/skrillex/with-you-friends-long-drive', function() {
+	items[0].url.should.equal('http://soundcloud.com/skrillex/with-you-friends-long-drive');
     });
 
-    it('stream url should be http://api.soundcloud.com/tracks/133393388/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/133393388/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream url should be null', function() {
+	should.equal(items[0].stream_url, null);
     });
 
-    it('duration should be 235', function() {
-	items[0].duration.should.equal(235);
+    it('duration should be 90', function() {
+	items[0].duration.should.equal(90);
     });
 
-    it('created_at should be ', function() {
-	var date = new Date('2014/02/06 17:14:19 +0000');
+    it('created_at should be 2011/08/24 15:10:30 +0000', function() {
+	var date = new Date('2011/08/24 15:10:30 +0000');
 	items[0].created_at.should.equalDate.date;
     });
 });
@@ -77,8 +77,8 @@ describe('Analyzing https://w.soundcloud.com/player/?url=https%3A//api.soundclou
 	items[0].url.should.equal('http://soundcloud.com/skrillex/skrillex-leaving');
     });
 
-    it('stream url should be http://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream url should be https://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
 
     it('duration should be 287', function() {
@@ -91,42 +91,42 @@ describe('Analyzing https://w.soundcloud.com/player/?url=https%3A//api.soundclou
     });
 });
 
-describe('Analyzing https://soundcloud.com/gottadancedirty/sets/the-dirt-145-toks-colby-j', function () {
+describe('Analyzing http://soundcloud.com/skrillex/sets/scary-monsters-and-nice', function () {
     var items;
 
     before(function(done) {
-	parse('https://soundcloud.com/gottadancedirty/sets/the-dirt-145-toks-colby-j', function(err, i) {
+	parse('http://soundcloud.com/skrillex/sets/scary-monsters-and-nice', function(err, i) {
 	    items = i;
 	    done();
 	});
     });
 
-    it('identify 9 tracks part of a soundcloud set', function() {
-	items.should.have.length(9);
+    it('identify 8 tracks part of a soundcloud set', function() {
+	items.should.have.length(8);
     });
 
-    it('first track should have an id of 132843827', function() {
-	items[0].id.should.equal(132843827);
+    it('first track should have an id of 21792165', function() {
+	items[0].id.should.equal(21792165);
     });
 
     it('first track host should be soundcloud', function() {
 	items[0].host.should.equal('soundcloud');
     });
 
-    it('first track title should be Lancelot - Givin\' It Up (Panda Remix) [Anjunadeep]', function() {
-	items[0].title.should.equal('Lancelot - Givin\' It Up (Panda Remix) [Anjunadeep]');
+    it('first track title should be ROCK N\' ROLL (WILL TAKE YOU TO THE MOUNTAIN)', function() {
+	items[0].title.should.equal('ROCK N\' ROLL (WILL TAKE YOU TO THE MOUNTAIN)');
     });
 
-    it('first track url should be http://soundcloud.com/itspandauk/lancellot', function() {
-	items[0].url.should.equal('http://soundcloud.com/itspandauk/lancellot');
+    it('first track url should be http://soundcloud.com/skrillex/rock-n-roll-will-take-you-to', function() {
+	items[0].url.should.equal('http://soundcloud.com/skrillex/rock-n-roll-will-take-you-to');
     });
 
-    it('first track stream url should be http://api.soundcloud.com/tracks/132843827/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/132843827/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    it('first track stream url should be null', function() {
+	should.equal(items[0].stream_url, null);
     });
 
-    it('duration should be 257', function() {
-	items[0].duration.should.equal(257);
+    it('duration should be 90', function() {
+	items[0].duration.should.equal(90);
     });
 
     it('created_at should be 2014/02/03 14:41:41 +0000', function() {
@@ -164,8 +164,8 @@ describe('Analyzing http://soundcloud.com/vicetone/vicetone-lowdown-preview-1/s-
 	items.should.have.length(1);
     });
 
-    it('stream url should be http://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream url should be https://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3');
     });
 });
 
