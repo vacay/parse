@@ -1,0 +1,1 @@
+url to music data mapping - detect known music url formats & return valid metadata

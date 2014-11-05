@@ -14,7 +14,7 @@ define release
     node -e "\
         var j = require('./package.json');\
         j.version = \"$$NEXT_VERSION\";\
-        var s = JSON.stringify(j, null, 2);\
+        var s = JSON.stringify(j, null, 4);\
         require('fs').writeFileSync('./package.json', s);" && \
     git commit -m "Version $$NEXT_VERSION" -- package.json && \
     git tag "$$NEXT_VERSION" -m "Version $$NEXT_VERSION"
