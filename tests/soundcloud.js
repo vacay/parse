@@ -29,6 +29,10 @@ describe('Analyzing http://soundcloud.com/skrillex/with-you-friends-long-drive',
 	items[0].title.should.equal('WITH YOU, FRIENDS (LONG DRIVE)');
     });
 
+    it('artwork_url should be https://i1.sndcdn.com/artworks-000008793437-pgni6l-large.jpg', function() {
+	items[0].artwork_url.should.equal('https://i1.sndcdn.com/artworks-000008793437-pgni6l-large.jpg');
+    });
+
     it('url should be http://soundcloud.com/skrillex/with-you-friends-long-drive', function() {
 	items[0].url.should.equal('http://soundcloud.com/skrillex/with-you-friends-long-drive');
     });
@@ -77,6 +81,10 @@ describe('Analyzing https://w.soundcloud.com/player/?url=https%3A//api.soundclou
 	items[0].url.should.equal('http://soundcloud.com/skrillex/skrillex-leaving');
     });
 
+    it('artwork_url should be https://i1.sndcdn.com/artworks-000037584432-6688t4-large.jpg', function() {
+	items[0].artwork_url.should.equal('https://i1.sndcdn.com/artworks-000037584432-6688t4-large.jpg');
+    });
+
     it('stream url should be https://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
 	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/73653371/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
@@ -119,6 +127,10 @@ describe('Analyzing http://soundcloud.com/skrillex/sets/scary-monsters-and-nice'
 
     it('first track url should be http://soundcloud.com/skrillex/rock-n-roll-will-take-you-to', function() {
 	items[0].url.should.equal('http://soundcloud.com/skrillex/rock-n-roll-will-take-you-to');
+    });
+
+    it('first track should have an artwork of https://i1.sndcdn.com/artworks-000008793437-pgni6l-large.jpg', function() {
+	items[0].artwork_url.should.equal('https://i1.sndcdn.com/artworks-000008793437-pgni6l-large.jpg');
     });
 
     it('first track stream url should be null', function() {

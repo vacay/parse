@@ -25,6 +25,10 @@ describe('Analyzing http://youtube-dl.bandcamp.com/track/youtube-dl-test-song', 
 	items[0].host.should.equal('bandcamp');
     });
 
+    it('artwork_url should be http://f1.bcbits.com/img/a3216802731_10.jpg', function() {
+	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a3216802731_10.jpg');
+    });
+
     it('url should be http://youtube-dl.bandcamp.com/track/youtube-dl-test-song', function() {
 	items[0].url.should.equal('http://youtube-dl.bandcamp.com/track/youtube-dl-test-song');
     });
@@ -56,6 +60,10 @@ describe('Analyzing http://blazo.bandcamp.com/album/jazz-format-mixtape-vol-1', 
 	items.should.have.length(22);
     });
 
+    it('should identify artwork as http://f1.bcbits.com/img/a1721150828_10.jpg', function() {
+	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a1721150828_10.jpg');
+    });
+
 });
 
 describe('Analyzing http://exoticpylonrecords.bandcamp.com/album/bucolica/', function () {
@@ -68,8 +76,12 @@ describe('Analyzing http://exoticpylonrecords.bandcamp.com/album/bucolica/', fun
 	});
     });
 
-    it('identify 3 tracks part of a bandcamp album', function() {
-	items.should.have.length(3);
+    it('identify 9 tracks part of a bandcamp album', function() {
+	items.should.have.length(9);
+    });
+
+    it('should identify artwork as http://f1.bcbits.com/img/a3415374931_10.jpg', function() {
+	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a3415374931_10.jpg');
     });
 
 });

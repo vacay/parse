@@ -25,6 +25,10 @@ describe('Analyzing http://www.youtube.com/watch?v=iODdvJGpfIA', function () {
 	items[0].host.should.equal('youtube');
     });
 
+    it('artwork_url should be https://i.ytimg.com/vi/iODdvJGpfIA/0.jpg', function() {
+	items[0].artwork_url.should.equal('https://i.ytimg.com/vi/iODdvJGpfIA/0.jpg');
+    });
+
     it('url should be http://www.youtube.com/watch?v=iODdvJGpfIA', function() {
 	items[0].url.should.equal('http://www.youtube.com/watch?v=iODdvJGpfIA');
     });

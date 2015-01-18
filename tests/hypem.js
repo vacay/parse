@@ -20,11 +20,11 @@ describe('Analyzing http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(fea
     });
 
     it('should have a track id of 22ejp', function() {
-	items[0].id.should.equal('22ejp');
+	items[0].id.should.equal('134437608');
     });
 
     it('host should be hypem', function() {
-	items[0].host.should.equal('hypem');
+	items[0].host.should.equal('soundcloud');
     });
 
     it('url should be http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(feat.+Will+Heard)', function() {
@@ -60,11 +60,11 @@ describe('Analyzing http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(
     });
 
     it('should have a track id of 22q3z', function() {
-	items[0].id.should.equal('22q3z');
+	items[0].id.should.equal('136484279');
     });
 
     it('host should be hypem', function() {
-	items[0].host.should.equal('hypem');
+	items[0].host.should.equal('soundcloud');
     });
 
     it('url should be http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function() {

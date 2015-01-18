@@ -30,7 +30,7 @@ describe('Analyzing http://tuneage.tumblr.com/post/75185324168/audio_player_ifra
     });
 
     it('should have a title of tuneage.tumblr.com/post/75185324168', function() {
-	items[0].title.should.equal('tuneage.tumblr.com/post/75185324168');
+	items[0].title.should.equal('Sam Smith - Safe With Me');
     });
 
 });

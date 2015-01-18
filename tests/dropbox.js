@@ -34,7 +34,7 @@ describe('Analyzing https://www.dropbox.com/s/0qr9sai2veej4f8/THE_DOCTOR_GAMES.m
     });
 
     it('title should be THE_DOCTOR_GAMES', function() {
-	items[0].title.should.equal('THE_DOCTOR_GAMES');
+	items[0].title.should.equal('THE_DOCTOR_GAMES.mp4');
     });
 
 });
