@@ -27,6 +27,10 @@ describe('Analyzing http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(fea
 	items[0].host.should.equal('soundcloud');
     });
 
+    it('stream_url should be http://api.soundcloud.com/tracks/134437608/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/134437608/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    });
+
     it('url should be http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(feat.+Will+Heard)', function() {
 	items[0].url.should.equal('http://hypem.com/track/22ejp/TOURIST+-+I+Can\'t+Keep+Up+(feat.+Will+Heard)');
     });
@@ -65,6 +69,10 @@ describe('Analyzing http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(
 
     it('host should be hypem', function() {
 	items[0].host.should.equal('soundcloud');
+    });
+
+    it('stream_url should be http://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
 
     it('url should be http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function() {
