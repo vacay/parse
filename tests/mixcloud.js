@@ -36,7 +36,7 @@ describe('Analyzing https://www.mixcloud.com/johndigweed/transitions-with-john-d
     });
 
     it('there should be a stream_url', function() {
-	items[0].stream_url.should.exist;
+	should.exist(items[0].stream_url);
     });
 
     it('duration should be 6938', function() {
@@ -76,7 +76,7 @@ describe('Analyzing http://i.mixcloud.com/CGSZGD', function () {
     });
 
     it('there should be a stream_url', function() {
-	items[0].stream_url.should.exist;
+	should.exist(items[0].stream_url);
     });
 
     it('duration should be 6938', function() {
@@ -116,7 +116,7 @@ describe('Analyzing http://www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww
     });
 
     it('there should be a stream_url', function() {
-	items[0].stream_url.should.exist;
+	should.exist(items[0].stream_url);
     });
 
     it('duration should be 6938', function() {

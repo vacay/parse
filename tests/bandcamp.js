@@ -34,7 +34,7 @@ describe('Analyzing http://youtube-dl.bandcamp.com/track/youtube-dl-test-song', 
     });
 
     it('there should be a stream_url', function() {
-	items[0].stream_url.should.exist;
+	should.exist(items[0].stream_url);
     });
 
     it('title should be youtube-dl  \"\'/\\ä↭ - youtube-dl test song \"\'/\\ä↭', function() {
