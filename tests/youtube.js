@@ -61,24 +61,24 @@ describe('Analyzing http://www.youtube.com/embed/videoseries?list=PLpl1Jk0Vplb-l
 	items.should.have.length(15);
     });
 
-    it('first video should be UpRssA0CQ0E', function() {
-	items[0].id.should.equal('UpRssA0CQ0E');
+    it('first video should be Gwae1X-vFS0', function() {
+	items[0].id.should.equal('Gwae1X-vFS0');
     });
 
     it('host should be youtube', function() {
 	items[0].host.should.equal('youtube');
     });
 
-    it('url should be http://www.youtube.com/watch?v=UpRssA0CQ0E', function() {
-	items[0].url.should.equal('http://www.youtube.com/watch?v=UpRssA0CQ0E');
+    it('url should be http://www.youtube.com/watch?v=Gwae1X-vFS0', function() {
+	items[0].url.should.equal('http://www.youtube.com/watch?v=Gwae1X-vFS0');
     });
 
-    it('title should be LOUDPVCK & GLADIATOR feat. Nipsey Hussle - Tony (Official Video)', function() {
-	items[0].title.should.equal('LOUDPVCK & GLADIATOR feat. Nipsey Hussle - Tony (Official Video)');
+    it('title should be Armin van Buuren - Hystereo (Official Music Video)', function() {
+	items[0].title.should.equal('Armin van Buuren - Hystereo (Official Music Video)');
     });
 
-    it('duration should be 156', function() {
-	items[0].duration.should.equal('156');
+    it('duration should be 164', function() {
+	items[0].duration.should.equal('164');
     });
 
     it('created_at should be 2014-09-11T15:07:35.000Z', function() {

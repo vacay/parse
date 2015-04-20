@@ -27,8 +27,8 @@ describe('Analyzing https://www.mixcloud.com/johndigweed/transitions-with-john-d
 	items[0].host.should.equal('mixcloud');
     });
 
-    it('url should be http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
-	items[0].url.should.equal('http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
+    it('url should be https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
+	items[0].url.should.equal('https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
     });
 
     it('there should be an artwork_url of http://images-mix.netdna-ssl.com/w/600/h/600/q/85/upload/images/extaudio/875b76c0-c2b0-4dbb-86a8-7b3fa43c77b4.jpg', function() {
@@ -71,8 +71,8 @@ describe('Analyzing http://i.mixcloud.com/CGSZGD', function () {
 	items[0].host.should.equal('mixcloud');
     });
 
-    it('url should be http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
-	items[0].url.should.equal('http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
+    it('url should be https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
+	items[0].url.should.equal('https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
     });
 
     it('there should be a stream_url', function() {
@@ -111,8 +111,8 @@ describe('Analyzing http://www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww
 	items[0].host.should.equal('mixcloud');
     });
 
-    it('url should be http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
-	items[0].url.should.equal('http://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
+    it('url should be https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/', function() {
+	items[0].url.should.equal('https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
     });
 
     it('there should be a stream_url', function() {

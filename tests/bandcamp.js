@@ -65,23 +65,3 @@ describe('Analyzing http://blazo.bandcamp.com/album/jazz-format-mixtape-vol-1', 
     });
 
 });
-
-describe('Analyzing http://exoticpylonrecords.bandcamp.com/album/bucolica/', function () {
-    var items;
-
-    before(function(done) {
-	parse('http://exoticpylonrecords.bandcamp.com/album/bucolica/', function(err, i) {
-	    items = i;
-	    done();
-	});
-    });
-
-    it('identify 9 tracks part of a bandcamp album', function() {
-	items.should.have.length(9);
-    });
-
-    it('should identify artwork as http://f1.bcbits.com/img/a3415374931_10.jpg', function() {
-	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a3415374931_10.jpg');
-    });
-
-});

@@ -17,32 +17,32 @@ describe('Analyzing https://bop.fm/s/mark-ronson/uptown-funk', function () {
 	items.should.have.length(1);
     });
 
-    it('should have an id of 178349598', function() {
-	items[0].id.should.equal('178349598');
+    it('should have an id of OPf0YbXqDm0', function() {
+	items[0].id.should.equal('OPf0YbXqDm0');
     });
 
-    it('host should be soundcloud', function() {
-	items[0].host.should.equal('soundcloud');
+    it('host should be youtube', function() {
+	items[0].host.should.equal('youtube');
     });
 
-    it('url should be http://soundcloud.com/radiohotmusic/mark-ronson-uptown-funk-ft-bruno-mars', function() {
-	items[0].url.should.equal('http://soundcloud.com/radiohotmusic/mark-ronson-uptown-funk-ft-bruno-mars');
+    it('url should be http://www.youtube.com/watch?v=OPf0YbXqDm0', function() {
+	items[0].url.should.equal('http://www.youtube.com/watch?v=OPf0YbXqDm0');
     });
 
-    it('artwork_url should be http://a1.mzstatic.com/us/r30/Music5/v4/82/7e/f1/827ef169-5d4c-cbea-8bad-d872dc52c820/886444933049.1200x1200-75.jpg', function() {
-	items[0].artwork_url.should.equal('http://a1.mzstatic.com/us/r30/Music5/v4/82/7e/f1/827ef169-5d4c-cbea-8bad-d872dc52c820/886444933049.1200x1200-75.jpg');
+    it('artwork_url should be https://i.ytimg.com/vi/OPf0YbXqDm0/0.jpg', function() {
+	items[0].artwork_url.should.equal('https://i.ytimg.com/vi/OPf0YbXqDm0/0.jpg');
     });
 
-    it('stream url should be https://api.soundcloud.com/tracks/178349598/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/178349598/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream url should exists', function() {
+	should.exist(items[0].stream_url);
     });
 
-    it('title should be Mark Ronson - Uptown Funk', function() {
-	items[0].title.should.equal('Mark Ronson - Uptown Funk');
+    it('title should be Mark Ronson - Uptown Funk ft. Bruno Mars', function() {
+	items[0].title.should.equal('Mark Ronson - Uptown Funk ft. Bruno Mars');
     });
 
-    it('duration should be 292', function() {
-	items[0].duration.should.equal(292);
+    it('duration should be 271', function() {
+	items[0].duration.should.equal('271');
     });
 
 });
