@@ -59,24 +59,24 @@ describe('Analyzing http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(
 	});
     });
 
-    it('identify as hypem track link', function() {
+    it('identify as soundcloud track link', function() {
 	items.should.have.length(1);
     });
 
-    it('should have a track id of 22q3z', function() {
-	items[0].id.should.equal('136484279');
+    it('should have a track id of 136484279', function() {
+	items[0].id.should.equal(136484279);
     });
 
-    it('host should be hypem', function() {
+    it('host should be soundcloud', function() {
 	items[0].host.should.equal('soundcloud');
     });
 
-    it('stream_url should be http://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('http://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream_url should be https://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
 
-    it('url should be http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)', function() {
-	items[0].url.should.equal('http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(Lxury+Remix)');
+    it('url should be http://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix', function() {
+	items[0].url.should.equal('http://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix');
     });
 
     it('should have a title of Hot Natured - Benediction (Lxury Remix)', function() {

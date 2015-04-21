@@ -176,8 +176,8 @@ describe('Analyzing http://soundcloud.com/vicetone/vicetone-lowdown-preview-1/s-
 	items.should.have.length(1);
     });
 
-    it('stream url should be https://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3', function() {
-	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/131666915/stream?secret_token=s-jk9Kk&client_id=f43e91eac578ff68472afa2172d987d3');
+    it('stream url should be https://api.soundcloud.com/tracks/131666915/stream?client_id=f43e91eac578ff68472afa2172d987d3', function() {
+	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/131666915/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
 });
 
