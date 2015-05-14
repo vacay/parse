@@ -41,48 +41,40 @@ describe('Analyzing http://www.youtube.com/watch?v=iODdvJGpfIA', function () {
 	items[0].duration.should.equal('263');
     });
 
-    it('created_at should be 2008-10-31T18:06:55.000Z', function() {
-	var date = new Date('2008-10-31T18:06:55.000Z');
-	items[0].created_at.should.equalDate.date;
-    });
 });
 
-describe('Analyzing http://www.youtube.com/embed/videoseries?list=PLpl1Jk0Vplb-lrkbPDcI89qlolGqrc8ah', function () {
+describe('Analyzing https://www.youtube.com/playlist?list=UUXw-G3eDE9trcvY2sBMM_aA', function () {
     var items;
 
     before(function(done) {
-	parse('http://www.youtube.com/embed/videoseries?list=PLpl1Jk0Vplb-lrkbPDcI89qlolGqrc8ah', function(err, i) {
+	parse('https://www.youtube.com/playlist?list=UUXw-G3eDE9trcvY2sBMM_aA', function(err, i) {
 	    items = i;
 	    done();
 	});
     });
 
-    it('identify as a youtube video', function() {
-	items.should.have.length(15);
+    it('identify as a 23 youtube videos', function() {
+	items.should.have.length(23);
     });
 
-    it('first video should be Gwae1X-vFS0', function() {
-	items[0].id.should.equal('Gwae1X-vFS0');
+    it('first video should be 20jY_d5-Evc', function() {
+	items[0].id.should.equal('20jY_d5-Evc');
     });
 
     it('host should be youtube', function() {
 	items[0].host.should.equal('youtube');
     });
 
-    it('url should be http://www.youtube.com/watch?v=Gwae1X-vFS0', function() {
-	items[0].url.should.equal('http://www.youtube.com/watch?v=Gwae1X-vFS0');
+    it('url should be http://www.youtube.com/watch?v=20jY_d5-Evc', function() {
+	items[0].url.should.equal('http://www.youtube.com/watch?v=20jY_d5-Evc');
     });
 
-    it('title should be Armin van Buuren - Hystereo (Official Music Video)', function() {
-	items[0].title.should.equal('Armin van Buuren - Hystereo (Official Music Video)');
+    it('title should be Beyond The World of Interstellar - A special one-night cinema event', function() {
+	items[0].title.should.equal('Beyond The World of Interstellar - A special one-night cinema event');
     });
 
-    it('duration should be 164', function() {
-	items[0].duration.should.equal('164');
+    it('duration should be 28', function() {
+	items[0].duration.should.equal('28');
     });
 
-    it('created_at should be 2014-09-11T15:07:35.000Z', function() {
-	var date = new Date('2014-09-11T15:07:35.000Z');
-	items[0].created_at.should.equalDate.date;
-    });
 });
