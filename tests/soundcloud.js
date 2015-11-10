@@ -41,8 +41,8 @@ describe('Analyzing http://soundcloud.com/skrillex/with-you-friends-long-drive',
 	should.equal(items[0].stream_url, null);
     });
 
-    it('duration should be 90', function() {
-	items[0].duration.should.equal(90);
+    it('duration should be 389', function() {
+	items[0].duration.should.equal(389);
     });
 
     it('created_at should be 2011/08/24 15:10:30 +0000', function() {
@@ -109,8 +109,8 @@ describe('Analyzing http://soundcloud.com/skrillex/sets/scary-monsters-and-nice'
 	});
     });
 
-    it('identify 8 tracks part of a soundcloud set', function() {
-	items.should.have.length(8);
+    it('identify 9 tracks part of a soundcloud set', function() {
+	items.should.have.length(9);
     });
 
     it('first track should have an id of 21792165', function() {
@@ -137,8 +137,8 @@ describe('Analyzing http://soundcloud.com/skrillex/sets/scary-monsters-and-nice'
 	should.equal(items[0].stream_url, null);
     });
 
-    it('duration should be 90', function() {
-	items[0].duration.should.equal(90);
+    it('duration should be 284', function() {
+	items[0].duration.should.equal(284);
     });
 
     it('created_at should be 2014/02/03 14:41:41 +0000', function() {

@@ -27,8 +27,8 @@ describe('Analyzing http://hypem.com/track/hm5b/Busy+P+-+To+Protect+And+Entertai
 	items[0].host.should.equal('hypem');
     });
 
-    it('stream_url should be http://livingears.com/music/2008Songs/5/45BP.mp3', function() {
-	items[0].stream_url.should.equal('http://livingears.com/music/2008Songs/5/45BP.mp3');
+    it('stream_url should be http://www.theburningear.com/media/2009/06/08-Busy-P-ft.-Murs-To-Protect-And-Entertain-Crookers-Remix.mp3', function() {
+	items[0].stream_url.should.equal('http://www.theburningear.com/media/2009/06/08-Busy-P-ft.-Murs-To-Protect-And-Entertain-Crookers-Remix.mp3');
     });
 
     it('url should be http://hypem.com/track/hm5b/Busy+P+-+To+Protect+And+Entertain+(Crookers+Remix)', function() {
