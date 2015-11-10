@@ -17,7 +17,7 @@
         "URIjs": "1.14.1",
         "async": "0.9.0",
         "node-ffprobe": "1.2.2",
-        "request": "2.65.1",
+        "request": "2.65.0",
         "requestretry": "^1.5.0",
         "ytdl-core": "0.7.6"
     },
