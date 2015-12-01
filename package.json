@@ -1,6 +1,6 @@
 {
     "name": "parse",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "identify a music url & display metadata",
     "private": true,
     "main": "index.js",
@@ -19,7 +19,7 @@
         "node-ffprobe": "1.2.2",
         "request": "2.65.0",
         "requestretry": "^1.5.0",
-        "ytdl-core": "0.7.6"
+        "ytdl-core": "0.7.8"
     },
     "devDependencies": {
         "mocha": "2.1.0",
