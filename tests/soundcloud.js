@@ -110,7 +110,7 @@ describe('Analyzing http://soundcloud.com/skrillex/sets/scary-monsters-and-nice'
     });
 
     it('identify 9 tracks part of a soundcloud set', function() {
-	items.should.have.length(8);
+	items.should.have.length(9);
     });
 
     it('first track should have an id of 21792165', function() {

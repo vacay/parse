@@ -26,7 +26,7 @@ describe('Analyzing http://youtube-dl.bandcamp.com/track/youtube-dl-test-song', 
     });
 
     it('artwork_url should be http://f1.bcbits.com/img/a3216802731_10.jpg', function() {
-	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a3216802731_10.jpg');
+	items[0].artwork_url.should.equal('http://f4.bcbits.com/img/a3216802731_10.jpg');
     });
 
     it('url should be http://youtube-dl.bandcamp.com/track/youtube-dl-test-song', function() {
@@ -61,7 +61,7 @@ describe('Analyzing http://blazo.bandcamp.com/album/jazz-format-mixtape-vol-1', 
     });
 
     it('should identify artwork as http://f1.bcbits.com/img/a1721150828_10.jpg', function() {
-	items[0].artwork_url.should.equal('http://f1.bcbits.com/img/a1721150828_10.jpg');
+	items[0].artwork_url.should.equal('http://f4.bcbits.com/img/a1721150828_10.jpg');
     });
 
 });
