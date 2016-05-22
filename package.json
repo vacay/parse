@@ -1,6 +1,6 @@
 {
     "name": "parse",
-    "version": "0.2.16",
+    "version": "0.2.17",
     "description": "identify a music url & display metadata",
     "private": true,
     "main": "index.js",
