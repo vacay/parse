@@ -1,33 +1,33 @@
 {
-  "name": "parse",
-  "version": "0.2.20",
-  "description": "identify a music url & display metadata",
-  "private": true,
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/vacay/parse.git"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "author": "t3rr0r",
-  "license": "MIT",
-  "dependencies": {
-    "async": "0.9.0",
-    "cheerio": "^0.22.0",
-    "node-ffprobe": "1.2.2",
-    "request": "2.65.0",
-    "requestretry": "^1.5.0",
-    "urijs": "1.16.1",
-    "ytdl-core": "0.9.0"
-  },
-  "devDependencies": {
-    "mocha": "2.1.0",
-    "chai": "1.10.0",
-    "chai-datetime": "1.3.1",
-    "semver": "2.2.1",
-    "grunt": "0.4.x",
-    "grunt-contrib-jshint": "0.11.x"
-  }
+    "name": "parse",
+    "version": "0.2.21",
+    "description": "identify a music url & display metadata",
+    "private": true,
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/vacay/parse.git"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "author": "t3rr0r",
+    "license": "MIT",
+    "dependencies": {
+        "async": "0.9.0",
+        "cheerio": "^0.22.0",
+        "node-ffprobe": "1.2.2",
+        "request": "2.65.0",
+        "requestretry": "^1.5.0",
+        "urijs": "1.16.1",
+        "ytdl-core": "0.9.0"
+    },
+    "devDependencies": {
+        "mocha": "2.1.0",
+        "chai": "1.10.0",
+        "chai-datetime": "1.3.1",
+        "semver": "2.2.1",
+        "grunt": "0.4.x",
+        "grunt-contrib-jshint": "0.11.x"
+    }
 }
