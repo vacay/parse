@@ -31,8 +31,8 @@ describe('Analyzing https://www.mixcloud.com/johndigweed/transitions-with-john-d
 	items[0].url.should.equal('https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-chymera/');
     });
 
-    it('there should be an artwork_url of http://thumbnail.mixcloud.com/w/600/h/600/q/85/upload/images/extaudio/875b76c0-c2b0-4dbb-86a8-7b3fa43c77b4.jpg', function() {
-	items[0].artwork_url.should.equal('http://thumbnail.mixcloud.com/w/600/h/600/q/85/upload/images/extaudio/875b76c0-c2b0-4dbb-86a8-7b3fa43c77b4.jpg');
+    it('there should be an artwork_url of https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/8/7/5/b/76c0-c2b0-4dbb-86a8-7b3fa43c77b4.jpg', function() {
+	items[0].artwork_url.should.equal('https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/8/7/5/b/76c0-c2b0-4dbb-86a8-7b3fa43c77b4.jpg');
     });
 
     it('there should be a stream_url', function() {

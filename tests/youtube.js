@@ -37,8 +37,8 @@ describe('Analyzing http://www.youtube.com/watch?v=iODdvJGpfIA', function () {
 	items[0].title.should.equal('Fake Blood - Mars (Original Mix)');
     });
 
-    it('duration should be 262', function() {
-	items[0].duration.should.equal('262');
+    it('duration should be 263', function() {
+	items[0].duration.should.equal('263');
     });
 
 });
@@ -73,8 +73,8 @@ describe('Analyzing https://www.youtube.com/playlist?list=UUXw-G3eDE9trcvY2sBMM_
 	items[0].title.should.equal('Beyond The World of Interstellar - A special one-night cinema event');
     });
 
-    it('duration should be 27', function() {
-	items[0].duration.should.equal('27');
+    it('duration should be 28', function() {
+	items[0].duration.should.equal('28');
     });
 
 });

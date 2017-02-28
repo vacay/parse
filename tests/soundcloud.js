@@ -33,8 +33,8 @@ describe('Analyzing http://soundcloud.com/skrillex/with-you-friends-long-drive',
 	items[0].artwork_url.should.equal('https://i1.sndcdn.com/artworks-000008793437-pgni6l-large.jpg');
     });
 
-    it('url should be http://soundcloud.com/skrillex/with-you-friends-long-drive', function() {
-	items[0].url.should.equal('http://soundcloud.com/skrillex/with-you-friends-long-drive');
+    it('url should be https://soundcloud.com/skrillex/with-you-friends-long-drive', function() {
+	items[0].url.should.equal('https://soundcloud.com/skrillex/with-you-friends-long-drive');
     });
 
     it('stream url should be null', function() {
@@ -77,8 +77,8 @@ describe('Analyzing https://w.soundcloud.com/player/?url=https%3A//api.soundclou
 	items[0].title.should.equal('Skrillex - Leaving');
     });
 
-    it('url should be http://soundcloud.com/skrillex/skrillex-leaving', function() {
-	items[0].url.should.equal('http://soundcloud.com/skrillex/skrillex-leaving');
+    it('url should be https://soundcloud.com/skrillex/skrillex-leaving', function() {
+	items[0].url.should.equal('https://soundcloud.com/skrillex/skrillex-leaving');
     });
 
     it('artwork_url should be https://i1.sndcdn.com/artworks-000037584432-6688t4-large.jpg', function() {

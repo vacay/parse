@@ -27,8 +27,8 @@ describe('Analyzing http://hypem.com/track/hm5b/Busy+P+-+To+Protect+And+Entertai
 	items[0].host.should.equal('hypem');
     });
 
-    it('stream_url should be http://www.theburningear.com/media/2009/06/08-Busy-P-ft.-Murs-To-Protect-And-Entertain-Crookers-Remix.mp3', function() {
-	items[0].stream_url.should.equal('http://www.theburningear.com/media/2009/06/08-Busy-P-ft.-Murs-To-Protect-And-Entertain-Crookers-Remix.mp3');
+    it('stream_url should be http://livingears.com/music/LivingEarsRadio/042410/To Protect And Entertain Crookers.mp3', function() {
+	items[0].stream_url.should.equal('http://livingears.com/music/LivingEarsRadio/042410/To Protect And Entertain Crookers.mp3');
     });
 
     it('url should be http://hypem.com/track/hm5b/Busy+P+-+To+Protect+And+Entertain+(Crookers+Remix)', function() {
@@ -75,8 +75,8 @@ describe('Analyzing http://www.hypem.com/track/22q3z/Hot+Natured+-+Benediction+(
 	items[0].stream_url.should.equal('https://api.soundcloud.com/tracks/136484279/stream?client_id=f43e91eac578ff68472afa2172d987d3');
     });
 
-    it('url should be http://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix', function() {
-	items[0].url.should.equal('http://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix');
+    it('url should be https://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix', function() {
+	items[0].url.should.equal('https://soundcloud.com/hotnatured/hot-natured-benediction-lxury-remix');
     });
 
     it('should have a title of Hot Natured - Benediction (Lxury Remix)', function() {
