@@ -20,7 +20,7 @@
         "request": "2.65.0",
         "requestretry": "^1.5.0",
         "urijs": "1.16.1",
-        "ytdl-core": "0.9.0"
+        "ytdl-core": "0.20.2"
     },
     "devDependencies": {
         "mocha": "2.1.0",
